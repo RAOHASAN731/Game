@@ -1,0 +1,72 @@
+ 
+        body {
+            text-align: center;
+            background-color: lightgrey;
+        }
+
+        button {
+            margin-top: 100px;
+            margin: 20px;
+            cursor: pointer;
+            color: white;
+            height: 180px;
+            width: 180px;
+            font-size: 30px;
+            border-radius: 50%;
+            border: none;
+        }
+
+        #rock {
+            background-color: red;
+            &:hover {background-color: darkred;}
+        }
+
+        #paper {
+            background-color: blue;
+            margin-top: 140px;
+            &:hover {background-color: darkblue;}
+        }
+
+        #scissors {
+            background-color: green;
+            &:hover {background-color: darkgreen;}
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scoreboard {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .result-display {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            font-size: 24px;
+            display: none;
+            animation: fadeOut 2s ease-in-out;
+            z-index: 1000;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            70% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    
